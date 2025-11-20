@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
+import CareerPage from './screens/CareerPage';
 
 export default function App() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -51,6 +52,7 @@ export default function App() {
           onLogoutPress={handleLogoutPress}
           onLoginPress={handleLoginPress}
         />
+        <CareerPage />
         <Sidebar
           visible={sidebarVisible}
           onClose={handleSidebarClose}
